@@ -27,6 +27,15 @@ public class User  {
 	private String emailid;
 	private String phno;
 	private String enabled;
+	private String role;
+
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
+	}
 
 	public int getUser_id() {
 		return user_id;
