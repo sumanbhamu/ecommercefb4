@@ -77,6 +77,7 @@ public class HomeController {
 		ModelAndView mv = new ModelAndView("register");
 		// user.setRole("ROLE_USER");
 		user.setEnabled("true");
+		user.setRole("ROLE_USER");
 
 		if (user.getConfirmpassword().equals(user.getPassword())) {
 			userDAO.saveOrUpdate(user);
